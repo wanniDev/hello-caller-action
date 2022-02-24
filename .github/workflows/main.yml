@@ -15,10 +15,10 @@ jobs:
   call-workflow:
     runs-on: ubuntu-latest
     steps:
-        - uses: actions/checkout@v2
-        - uses: ./.github/workflows/reuse-action.yml
-          with:
-            name: hello
-        - uses: ./.github/workflows/reuse-action2.yml
-          with:
-            name: hi
+      - uses: actions/checkout@v2
+      - uses: ./.github/workflows/reuse-action
+        with:
+          name: hello
+      - uses: ./.github/workflows/reuse-action2
+        with:
+          name: hi
