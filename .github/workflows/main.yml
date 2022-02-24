@@ -16,4 +16,8 @@ jobs:
     uses: ./.github/workflows/reuse-action.yml
     with:
       name: hello
+  call-workflow2:
+    uses: ./.github/workflows/reuse-action.yml
+    with:
+      name: hi
 
