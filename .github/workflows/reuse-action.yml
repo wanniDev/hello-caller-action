@@ -18,6 +18,6 @@ jobs:
       - name: build with maven
         run: mvn --batch-mode --update-snapshots clean package
       - name: touch file
-        run: touch aaa
+        run: touch ${{inputs.name}}
       - name: ls
         run: ls -la
