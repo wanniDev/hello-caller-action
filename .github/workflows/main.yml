@@ -25,3 +25,5 @@ jobs:
         run: mvn --batch-mode --update-snapshots clean package
       - name: touch file
         run: touch aaa
+      - name: ls
+        run: ls -la
