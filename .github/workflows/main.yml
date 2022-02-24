@@ -23,11 +23,7 @@ jobs:
           distribution: 'temurin'
       - name: build with maven
         run: mvn --batch-mode --update-snapshots clean package
-      - name: check dir
-        run: ls -la
-  check:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: check dir from another job
-        run: ls -la
+      - name: use another action
+        uses: hello-caller-action/action@main
+        with:
+          name: hello
