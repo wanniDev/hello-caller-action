@@ -23,7 +23,5 @@ jobs:
           distribution: 'temurin'
       - name: build with maven
         run: mvn --batch-mode --update-snapshots clean package
-      - name: use another action
-        uses: hello-caller-action/action@main
-        with:
-          name: hello
+      - name: touch file
+        run: touch aaa
